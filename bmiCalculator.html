@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>BMI Calculator</h1>
+    <div id="google_translate_element">
+        <a href="bmiCalculatorPt.html">
+            <button>Portuguese</button>
+        </a>
+        <a href="bmiCalculatorFr.html">
+            <button>French</button>
+        </a>
+        <a href="bmiCalculator.html">
+            <button>English</button>
+        </a>    
+        <a href="bmiCalculatorEs.html">
+            <button>Spanish</button>
+        </a>
+    </div>
+    <div id="google_translate_element">
+    </div>
+    <div class="container">
+        <div class="first-step">
+            <p>Click at the button to calculate your BMI</p>
+            <button onclick="go(1,2)">Start</button>
+        </div>
+        <div class="second-step">
+            <h3>BMI Calculator</h3>
+            <hr>
+            <label for="peso">Weight(kg):</label>
+            <input type="number" placeholder="Your weight in kilograms" id="peso">
+            <br><br>
+            <label for="altura">Height(m):</label>
+            <input type="number" placeholder="Your height in meters" id="altura">
+            <br><br>
+            <button onclick="validate()">Calculate</button>
+        </div>
+        <div class="third-step">
+            <h3>Result:</h3>
+            <p id="resultado"></p>
+            <button onclick="go(3,2)">New calculation</button>
+            <button onclick="go(3,1)">Main Menu</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

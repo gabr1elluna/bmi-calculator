@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora de IMC</h1>
+    <div>
+        <a href="bmiCalculatorPt.html">
+            <button>Português</button>
+        </a>
+        <a href="bmiCalculatorFr.html">
+            <button>Francês</button>
+        </a>
+        <a href="bmiCalculator.html">
+            <button>Inglês</button>
+        </a>
+        <a href="bmiCalculatorEs.html">
+            <button>Espanhol</button>
+        </a>
+    </div>
+    <div class="container">
+        <div class="first-step">
+            <p>Clique no botão para calcular seu IMC</p>
+            <button onclick="go(1,2)">Começar</button>
+        </div>
+        <div class="second-step">
+            <h3>Calculadora de IMC</h3>
+            <hr>
+            <label for="peso">Peso (kg):</label>
+            <input type="number" placeholder="Seu peso em quilogramas" id="peso">
+            <br><br>
+            <label for="altura">Altura (m):</label>
+            <input type="number" placeholder="Sua altura em metros" id="altura">
+            <br><br>
+            <button onclick="validatePt()">Calcular</button>
+        </div>
+        <div class="third-step">
+            <h3>Resultado:</h3>
+            <p id="resultado"></p>
+            <button onclick="go(3,2)">Novo cálculo</button>
+            <button onclick="go(3,1)">Menu principal</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
